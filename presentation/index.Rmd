@@ -13,24 +13,21 @@ mode        : selfcontained # {standalone, draft}
 
 ## HPV
 
-<img src='./assets/img/microbiome_composite.png' height=250>
+<img src='./assets/img/someimage.png' height=250>
 
 ---
 
 ## HPV
 
-* Bypass the 'plate-count anomaly' and extract genomic information directly from the sample
-* A snapshot of the genetic content of microbial community
-* Communities of varied phyletic composition
-* High rates of horizontal gene transfer
-* Large amount of genetic and metabolic diversity
-
+* Foo
+* Bar
+* Baz
 
 --- &slide_center
 
 ## Blah
 
-<img src='./assets/img/natrev_microbio_pangenome.png' height=250>
+<img src='./assets/img/someimage.png' height=250>
 
 ---
 
