@@ -67,13 +67,26 @@ http://dx.doi.org/10.1016/j.ajog.2012.09.007
 
 ---
 
+## Major question
+
+* Is genomic instability in HPV-related cancers tied to HPV integration events?
+
+---
+
 ## 
 
 <img src="./assets/img/tbl1.png" alt="table 1" width=850>
 
+--- &shout
+
+## 
+
+* HPV integration events are detected with whole genome sequencing (WGS)
+* E6 and E7 oncogenes retained in all samples
+* 
 ---
 
-## HPV WGS (Fig. 1A)
+## HPV detection with WGS (Fig. 1A)
 
 <img src="./assets/img/fig1a.png" alt="Figure 1a" width=800>
 
@@ -84,6 +97,12 @@ http://dx.doi.org/10.1016/j.ajog.2012.09.007
 
 ---
 
+## HPV detection with WGS (Table 1)
+
+<img src="./assets/img/tbl1-2.png" alt="table 1" width=500>
+
+---
+
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 library(ggplot2)
 library(xtable)
@@ -91,6 +110,7 @@ library(plyr)
 
 options(xtable.type="html", xtable.caption.placement="top")
 
+opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
 ## HPV integration breakpoints (Fig. 1B)
@@ -99,27 +119,35 @@ options(xtable.type="html", xtable.caption.placement="top")
 
 ---
 
-## 
+## HPV integration breakpoints (Table 1)
 
-<img src="./assets/img/fig2.png" alt="title page" height=250>
+<img src="./assets/img/tbl1-3.png" alt="table 1" width=500>
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# Total of 111 unique insertional breakpoints; 105 confirmed by PCR
+# Some flanked missing viral segments (indicating loss at integration; ex. UM-SCC-47)
+```
+
+---
+
+## HPV integration clusters and SKY confirmation 
+
+<img src="./assets/img/fig2.png" alt="title page" height=450>
+
+```{r}
+# FISH signal found in identical cytogenetic regions of duplicate chrom copies, but with variable intensity
+# suggests that integration preceeded chromosomal duplication and subsequent divergence in viral copy number
+```
 
 ---
 
 ## 
 
-<img src="./assets/img/fig3a.png" alt="title page" height=250>
+<img src="./assets/img/fig3a.png" alt="title page" width=700>
 
----
+<img src="./assets/img/fig3b.png" alt="title page" width=700>
 
-## 
-
-<img src="./assets/img/fig3b.png" alt="title page" height=250>
-
----
-
-## 
-
-<img src="./assets/img/fig3c.png" alt="title page" height=250>
+<img src="./assets/img/fig3c.png" alt="title page" width=700>
 
 ---
 
