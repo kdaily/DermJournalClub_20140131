@@ -1,0 +1,194 @@
+---
+title       : Dermatology Branch Journal Club
+subtitle    : 2014-01-31
+author      : Kenneth Daily
+url         : {lib: libraries}
+job         : 
+framework   : shower        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, bootstrap, quiz]
+mode        : selfcontained # {standalone, draft}
+--- .cover #Cover
+
+```{r setup,echo=FALSE, warning=FALSE, message=FALSE}
+library(ggplot2)
+library(xtable)
+library(plyr)
+
+options(xtable.type="html", xtable.caption.placement="top")
+
+opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+## Dermatology Branch Journal Club<br/>Kenneth Daily<br/>2014-01-31
+
+<img src="./assets/img/cover.png" width="1024" alt="circos">
+
+--- &twocol_shower
+
+## Human papillomavirus (HPV)
+
+*** left
+
+### 
+* HPV is a DNA virus, > 40 strains
+  * HPV 16 and 18 most carcinogenic
+* Cause of nearly all cervical, as well as other anogenital and H&N, cancers
+* > 600K cases worldwide
+* Generally sexually transmitted
+* Detected on other body surfaces as well
+* Two vaccines available since 2006
+
+http://dx.doi.org/10.1016/j.ajog.2012.09.007
+
+*** right
+
+<img src='./assets/img/HPV_TEM.png' height=350>
+
+--- &slide_center
+
+## 
+
+<img src='./assets/img/HPV_infection_nrc2050-f1.png' height=450>
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# HPV infects keratinocytes in basal layer of epithelium
+# Infected keratinocytes do not undergo terminal differentiation
+# Virus replicates as episomal elements
+# Integration into host genome increases with severity
+# Oncoproteins
+# E6 <-> p53 (downregulates apoptosis pathway genes)
+# E7 <-> RB1 (disrupts G1/S phase transition of cell cycle)
+```
+
+---
+
+## HPV integration and structural abnormalities
+
+* HPV E2 gene often disrupted in integrated viral sequence
+  * loss blocks induction of apoptosis
+* Host structural variation in region of integration
+  * ~40% of cervical carcinomas
+
+<center>
+<img src="./assets/img/title_page.png" alt="title page" height=250>
+</center>
+
+---
+
+## 
+
+<img src="./assets/img/tbl1.png" alt="table 1" width=850>
+
+---
+
+## 
+
+Can HPV integration be detected with whole genome sequencing?
+
+---
+
+## HPV detection with WGS (Fig. 1A)
+
+<img src="./assets/img/fig1a.png" alt="Figure 1a" width=800>
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# 2x100bp PE whole genome sequencing
+# signif reads aligned to HPV in V+ samples
+```
+
+---
+
+## HPV detection with WGS (Table 1)
+
+<img src="./assets/img/tbl1-2.png" alt="table 1" width=500>
+
+---
+
+## 
+
+* HPV integration events are detected with whole genome sequencing (WGS)
+* E6 and E7 oncogenes retained in all samples
+* 
+
+---
+
+## HPV integration breakpoints (Fig. 1B)
+
+<img src="./assets/img/fig1b.png" alt="Figure 1b" width=800>
+
+---
+
+## HPV integration breakpoints (Table 1)
+
+<img src="./assets/img/tbl1-3.png" alt="table 1" width=500>
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# Total of 111 unique insertional breakpoints; 105 confirmed by PCR
+# Some flanked missing viral segments (indicating loss at integration; ex. UM-SCC-47)
+```
+
+---
+
+## HPV integration clusters and SKY confirmation 
+
+<img src="./assets/img/fig2.png" alt="title page" height=450>
+
+```{r}
+# FISH signal found in identical cytogenetic regions of duplicate chrom copies, but with variable intensity
+# suggests that integration preceeded chromosomal duplication and subsequent divergence in viral copy number
+```
+
+---
+
+## 
+
+<img src="./assets/img/fig3a.png" alt="title page" width=700>
+
+<img src="./assets/img/fig3b.png" alt="title page" width=700>
+
+<img src="./assets/img/fig3c.png" alt="title page" width=700>
+
+---
+
+## 
+
+<img src="./assets/img/fig3d.png" alt="title page" height=250>
+
+---
+
+## 
+
+<img src="./assets/img/fig3e.png" alt="title page" height=250>
+
+---
+
+## 
+
+<img src="./assets/img/fig3f.png" alt="title page" height=250>
+
+---
+
+## 
+
+<img src="./assets/img/fig3g.png" alt="title page" height=250>
+---
+
+## Major question
+
+Is genomic instability in HPV-related cancers tied to HPV integration events?
+
+--- &twocol_shower
+
+## Next Slide
+
+*** left
+
+### Stuff on the left:
+Some stuff
+
+*** right
+
+### Stuff on the right:
+> Some more stuff.
