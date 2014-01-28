@@ -11,6 +11,16 @@ widgets     : [mathjax, bootstrap, quiz]
 mode        : selfcontained # {standalone, draft}
 --- .cover #Cover
 
+```{r setup,echo=FALSE, warning=FALSE, message=FALSE}
+library(ggplot2)
+library(xtable)
+library(plyr)
+
+options(xtable.type="html", xtable.caption.placement="top")
+
+opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE)
+```
+
 ## Dermatology Branch Journal Club<br/>Kenneth Daily<br/>2014-01-31
 
 <img src="./assets/img/cover.png" width="1024" alt="circos">
@@ -67,23 +77,16 @@ http://dx.doi.org/10.1016/j.ajog.2012.09.007
 
 ---
 
-## Major question
+## 
 
-* Is genomic instability in HPV-related cancers tied to HPV integration events?
+<img src="./assets/img/tbl1.png" alt="table 1" width=850>
 
 ---
 
 ## 
 
-<img src="./assets/img/tbl1.png" alt="table 1" width=850>
+Can HPV integration be detected with whole genome sequencing?
 
---- &shout
-
-## 
-
-* HPV integration events are detected with whole genome sequencing (WGS)
-* E6 and E7 oncogenes retained in all samples
-* 
 ---
 
 ## HPV detection with WGS (Fig. 1A)
@@ -103,15 +106,13 @@ http://dx.doi.org/10.1016/j.ajog.2012.09.007
 
 ---
 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
-library(ggplot2)
-library(xtable)
-library(plyr)
+## 
 
-options(xtable.type="html", xtable.caption.placement="top")
+* HPV integration events are detected with whole genome sequencing (WGS)
+* E6 and E7 oncogenes retained in all samples
+* 
 
-opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE)
-```
+---
 
 ## HPV integration breakpoints (Fig. 1B)
 
@@ -172,6 +173,11 @@ opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE)
 ## 
 
 <img src="./assets/img/fig3g.png" alt="title page" height=250>
+---
+
+## Major question
+
+Is genomic instability in HPV-related cancers tied to HPV integration events?
 
 --- &twocol_shower
 
