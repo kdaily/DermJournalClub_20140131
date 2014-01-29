@@ -1,0 +1,68 @@
+Derm Branch Journal Club 2014-01-31 Notes
+========================================================
+
+Introduction
+----------
+
+## HPV background
+* HPVs cause 610K cancers
+* main cause of cervical cancer
+* E6 and E7 oncoproteins are transforming (inactivate TSGs P53 and RB1)
+* early in infection, HPV replicates episomally
+* Integration provides selective growth advantage, increased genomic instability
+* increase in E6/E7 expression due to loss of E2
+* associated with structural abnormalities
+
+## HPV integration
+* HPV infects keratinocytes in basal layer of epithelium
+* Infected keratinocytes do not undergo terminal differentiation
+* Virus replicates as episomal elements
+* estimated 10% of cases a transforming type of HPV infection evolves. 
+* characterized by the deregulation of viral oncogenes E6 and E7 in cycling cells 
+* results in chromosomal instability and the accumulation of mutations
+
+* Integration into host genome increases with severity
+* Oncoproteins
+* E6 up, p53 down (downregulates apoptosis pathway genes)
+* E7 up, RB1 down (disrupts G1/S phase transition of cell cycle)
+
+
+Results
+----------
+
+## Variability in HPV genomes and transcriptomes
+
+* 2x100bp PE whole genome sequencing
+* signif reads aligned to HPV in V+ samples
+* clonal relationship b/c of unique homozygous viral mutations
+* Variable coverage indicates breakpoints/rearrangements
+* Total of 111 unique insertional breakpoints; 105 confirmed by PCR
+* Some flanked missing viral segments (indicating loss at integration; ex. UM-SCC-47)
+* Unique breakpoints, rearrangements
+* E6/E7 oncogenes retained
+* RNASeq positive for HPV viral genes (supp fig 2)
+
+## HPV and the cellular genome
+
+## Focal clustering of HPV integrants
+
+## HPV insertions flank CNVs
+
+## Resolving focal genomic amplifications and rearrangements
+
+## HPV integrants disrupt cellular genes by multiple mechanisms
+
+Discussion
+----------
+
+Issues
+------
+
+* Use of cell lines
+* No mention of reports of HPV integration mechanism possibilities
+* No mention (or identification) of HPV tandem arrays (head-to-tail concatemers)
+
+Other DNA viruses (MCV)
+--------------------
+
+* We see similar signatures in exome sequencing data
