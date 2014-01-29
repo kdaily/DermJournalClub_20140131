@@ -9,6 +9,7 @@ highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [mathjax, bootstrap, quiz]
 mode        : selfcontained # {standalone, draft}
+
 --- .cover #Cover
 
 ```{r setup,echo=FALSE, warning=FALSE, message=FALSE}
@@ -23,33 +24,96 @@ opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE)
 
 ## Dermatology Branch Journal Club<br/>Kenneth Daily<br/>2014-01-31
 
+```{r}
+# http://www.bryanchristiedesign.com/portfolio.php?illustration=587&category=13&open=13
+
+```
 <img src="./assets/img/cover.png" width="1024" alt="circos">
 
 ---
 
 ## DNA tumor viruses
+* Kaposi's sarcoma-associated herpesvirus
+* Epstein-Barr virus (lymphomas and others)
+* Human cytomegalovirus (mucoepidermoid carcinoma)
+* Merkel cell polyomavirus
+* Human papilloma virus
+
+--- &twocol_shower
+
+## Human papillomavirus (HPV)
+
+*** left
+
+*  > 40 strains of HPV
+  * HPV 16 and 18 most carcinogenic
+* Cause of nearly all cervical, as well as other anogenital and H&N, cancers
+* > 600K cases worldwide
+* Generally sexually transmitted
+* Detected on other body surfaces as well
+* Two vaccines available since 2006
+
+http://dx.doi.org/10.1016/j.ajog.2012.09.007
+
+*** right
+
+<img src='./assets/img/HPV_TEM.png' height=350>
+
+--- &slide_center
+
+## 
+
+<img src='./assets/img/HPV_infection_nrc2050-f1.png' height=450>
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# HPV infects keratinocytes in basal layer of epithelium
+# Virus replicates as episomal elements during normal life cycle of keratinocytes
+# Infected keratinocytes do not undergo terminal differentiation
+# Integration into host genome increases with severity
+# Oncoproteins
+# E6 <-> p53 (downregulates apoptosis pathway genes)
+# E7 <-> RB1 (disrupts G1/S phase transition of cell cycle)
+# HPV E2 gene often disrupted in integrated viral sequence, loss blocks induction of apoptosis
+```
 
 ---
 
-## What is HPV
+## HPV integration and structural abnormalities
+
+Host structural variation in region of integration observed in 30-40% of cervical carcinomas, but this is based on (relatively) low resolution SNP arrays.
 
 ---
 
-## HPV infection
+## HPV integration and structural abnormalities
+
+* Host structural variation in region of integration
+  * ~40% of cervical carcinomas
 
 ---
 
-## HPV integration
+<center>
+<img src="./assets/img/title_page.png" alt="title page" height=300>
+</center>
 
 ---
 
-## Can HPV integration be detected by whole genome sequencing?
+<img src="./assets/img/tbl1-1.png" alt="table 1" width=700>
+
+Nearly 40x WGS coverage in all samples.
 
 ---
 
-## Fig 1A
+<img src="./assets/img/tbl1-2.png" alt="table 1" width=700>
 
-The HPV view of integration events
+---
+
+<img src="./assets/img/tbl1-3.png" alt="table 1" width=700>
+
+---
+
+## Detecting HPV integration by whole genome sequencing (Fig. 1A)
+
+<img src="./assets/img/fig1a.png" alt="Figure 1a" width=800>
 
 ```{r}
 ## clonal relationship b/c of unique homozygous viral mutations
@@ -61,7 +125,11 @@ The HPV view of integration events
 
 ---
 
-## Fig 1B - breakpoints detected in HPV genome
+## Breakpoints in HPV genome (Fig 1B)
+
+111 total breakpoints; E2 lost in 4 samples, E6 and E7 retained in all samples
+
+<img src="./assets/img/fig1b.png" alt="Figure 1b" width=800>
 
 ```{r}
 ## Unappreciated view of intraviral rearrangements
@@ -70,9 +138,11 @@ The HPV view of integration events
 ---
 
 ## Supp Fig 1a
+
 ---
 
 ## Supp Fig 1b
+
 ---
 
 ## Supp Fig 1c
@@ -119,13 +189,9 @@ Is there a relationship between HPV integration and host genome CNVs?
 
 ---
 
-##
-
-What is the detailed structure of the focal rearrangements involving HPV integration?
+## What is the detailed structure of the focal rearrangements involving HPV integration?
 
 ---
-
-##
 
 ```{r}
 ## Used the breakpoints and CNVs identified through WGS to build connectivity maps
@@ -158,4 +224,105 @@ Figure 5
 
 ```{r}
 ## resolved complex linear rearrangements in all but one HPV-positive cell lines
+```
+
+---
+
+## What kind of model explains these linear genome structures? The authors hypothesize a "looping" model.
+
+---
+
+## General looping model with rolling circle amplification
+
+Figure 4C
+
+```{r}
+## HPV integrants bridge non-contiguous genomic sequence by connecting nicked sites
+## Then, the replication of a transient circularized genomic segment would result in focal amp of breakpoints involving HPV and flanking host genomic sequences
+## Then, distal free ends of amplified strands could recombine with non-contiguous sequences and undergo DNA repair
+## This would result in concatemerized linear structures bounded by recurrent, identical breakpoints
+
+## RC replication has been observed in HPV (extracts from human epithelial cells induce rolling circle replication of the HPV16 origin-containing plasmid in vitro - http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2443.2010.01458.x/full)
+```
+
+---
+
+## Evaluation of primary tumors
+
+Figure 6a-c
+
+---
+
+## Evaluation of primary tumors
+
+Figure 6d-e
+
+---
+
+## Summary thus far
+
+* HPV integrations flank host genome CNVs
+* Explained patterns of breakpoints by RCA-type looping model
+* Observed in cell lines, tumor samples
+* Half of another 21 HPV+ primary tumors have same pattern
+
+---
+
+## What other carcinogenic mechanisms could HPV be involved in?
+
+---
+
+## HPV integrants disrupt cellular genes
+
+* Overall a statistically non-significant signature of enrichment near RefSeq genes, fragile sites, or DNaseI sensitive sites
+* The RNAseq data confirmed the WGS data (same genomic rearrangements)
+* Identified viral-host gene fusions in all cell lines and Tumor A
+
+---
+
+## Disruption of genes involved in carcinogenesis (Fig 7)
+
+```{r}
+## deletion and rearrangement of DIAPH2 locus, which plasy a role in sister-chromatid separation
+## resulted in alt spiced viral host fusion genes
+## viralhost fusion transcripts of DIAPH2 were expressed while the native transcripts was not
+```
+
+---
+
+## Amplification leads to aberrant expression of TP63 (Fig 7)
+
+```{r}
+## novel viral-host fusion transcripts expressed, and a novel 25kDa protein
+```
+
+---
+
+## Amplification of genes in region of HPV breakpoints (Supp Fig 10)
+
+---
+
+## Gene breakage (Supp Fig 10)
+
+```{r}
+## gene breakage describes a mechanism where a disrupting event in a gene region results in two separate transcripts
+## In this case, premature termination of txpts at the HPV5 polyA site was the suspected cause
+```
+
+---
+
+## Discussion
+
+---
+
+## Other possibilities not mentioned or cited
+
+* Li et al. (J Clin Virol 2013) find preferential sites for integration in repetitive regions
+* Schmitz et al. (PloS one 2012) find homology between HPV sequence, nearby integration site sequence
+
+```{r}
+## No mention of 'tandem repeats', or head-to-tail concatemers, of HPV, which have previously been reported
+## Including in the cell line CaSki, which is reported to have 500 tandem repeats of HPV16!
+## rolling circle amp is probably not good for HPV; herpes viruses use it but have viral encoded cleavage protein, which papillomaviruses lack
+## Some suggestion that DNA damage to HPV could lead to accidental RCA followed by integration via host DS-break repair mechanisms
 ```

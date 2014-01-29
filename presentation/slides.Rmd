@@ -31,8 +31,7 @@ opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE)
 
 *** left
 
-### 
-* HPV is a DNA virus, > 40 strains
+*  > 40 strains of HPV
   * HPV 16 and 18 most carcinogenic
 * Cause of nearly all cervical, as well as other anogenital and H&N, cancers
 * > 600K cases worldwide
@@ -54,8 +53,8 @@ http://dx.doi.org/10.1016/j.ajog.2012.09.007
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 # HPV infects keratinocytes in basal layer of epithelium
+# Virus replicates as episomal elements during normal life cycle of keratinocytes
 # Infected keratinocytes do not undergo terminal differentiation
-# Virus replicates as episomal elements
 # Integration into host genome increases with severity
 # Oncoproteins
 # E6 <-> p53 (downregulates apoptosis pathway genes)
