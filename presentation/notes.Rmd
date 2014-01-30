@@ -9,46 +9,53 @@ Introduction
 ## HPV background
 * HPVs cause 610K cancers
 * main cause of cervical cancer
-* E6 and E7 oncoproteins are transforming (inactivate TSGs P53 and RB1)
 * early in infection, HPV replicates episomally
 * Integration provides selective growth advantage, increased genomic instability
-* increase in E6/E7 expression due to loss of E2
 * associated with structural abnormalities
 
 ## HPV integration
-* HPV infects keratinocytes in basal layer of epithelium
+
+### HPV infects keratinocytes in basal layer of epithelium
 * Infected keratinocytes do not undergo terminal differentiation
 * Virus replicates as episomal elements
 * estimated 10% of cases a transforming type of HPV infection evolves. 
-* characterized by the deregulation of viral oncogenes E6 and E7 in cycling cells 
-* results in chromosomal instability and the accumulation of mutations
 
-* Integration into host genome increases with severity
-* Oncoproteins
+### Oncoproteins
+* characterized by the deregulation of viral oncogenes E6 and E7 in cycling cells 
+* increase in E6/E7 expression due to loss of E2
 * E6 up, p53 down (downregulates apoptosis pathway genes)
 * E7 up, RB1 down (disrupts G1/S phase transition of cell cycle)
+* E6 and E7 oncoproteins are transforming (inactivate TSGs P53 and RB1)
+* results in chromosomal instability and the accumulation of mutations
 
+Frequency of integration into host genome increases with severity of cervical precancers.
 
 Results
 ----------
 
 ## Table 1
 * Looked at HPV integration in 10 cell lines, two tumor samples
-
-## Variability in HPV genomes and transcriptomes (Fig. 1A)
 * 2x100bp PE whole genome sequencing
 * signif reads aligned to HPV in V+ samples
 
-* clonal relationship b/c of unique homozygous viral mutations
+## Variability in HPV genomes and transcriptomes (Fig. 1A)
 
+### SNPs
+* clonal relationship b/c of unique homozygous viral mutations (homozygous SNPs in HPV - 24-119 per sample)
+
+### Variable coverage
 * Variable coverage indicates breakpoints/rearrangements
+
+### Discordant reads
 * Total of 111 unique insertional breakpoints; 105 confirmed by PCR
 * Some flanked missing viral segments (indicating loss at integration; ex. UM-SCC-47)
 * Unique breakpoints, rearrangements
+
+### RNA analysis
 * E6/E7 oncogenes retained (confirmed by RNAseq)
 * RNASeq positive for HPV viral genes (supp fig 2)
 
-* Tumor B seemed to have constant read depth - indication of presence of episomal HPV
+Tumor B seemed to have constant read depth - indication of presence of episomal HPV.
 
 ## HPV and the cellular genome
 * Inverse relationship b/t HPV integration, TP53, CDKN2A inactivating mutations
@@ -59,20 +66,21 @@ Results
 
 * HPV integrants cluster in focal regions within samples, but uniquely throughout the genome between samples
 * specific, chromosomal regions in different cell lines
-* confirmed with FISH and SKY
-* Confirmed most except low copy number
+* confirmed with FISH and SKY, most except low copy number
 * HPV FISH signals found in identical cytogenetic regions of duplicate chromosomal copies, but with variable intensities
 * suggests integration preceded chrom duplic and subsequent divergence in viral copy number. 
-* 6/9 
 
 ## HPV insertions flank CNVs
 
+### Conformation of association with CNVs
 * statistically significant association with CNVs
 * observe focal genomic CNVs in 8/9 HPV-positive cases
 * found at amplfications ranging from 1.5x (HMS001) to 58x (UPCI:SCC90) increase
 * also occurred near deletions from 487bp (HMS001) to 234kb (UPCI:SC0090)
 * All confirmed by qPCR, PCR, Sanger seq
-* many examples where genes may be disrupted
+* Including many examples where genes may be disrupted
+
+WGS let's them look at these regions in much higher detail than previously allowed.
 
 ## Resolving focal genomic amplifications and rearrangements
 
@@ -85,8 +93,8 @@ Using the breakpoints and CNVs identified through WGS, build connectivity maps.
 * ends up with a concatemerized head-to-tail genomic/HPV segments (two HPV integrants bounded by identical breakpoints)
 
 ### HMS001 cell line
-** two HPV insertional breakpoints spannind a small deletion
-** Adjacent host genome frags and HPV seqs duplicated in tandem - results in two identical HPV integrants with an intrachromosomal rearrangement
+* two HPV insertional breakpoints spannind a small deletion
+* Adjacent host genome frags and HPV seqs duplicated in tandem - results in two identical HPV integrants with an intrachromosomal rearrangement
 
 ### Other cell lines
 * resolved complex linear rearrangements in all but one HPV-positive cell lines
@@ -110,10 +118,20 @@ RC replication has been observed in HPV (extracts from human epithelial cells in
 
 ## HPV integrants disrupt cellular genes by multiple mechanisms
 
-### DIAPH2 in 
-## deletion and rearrangement of DIAPH2 locus, which plasy a role in sister-chromatid separation
-## resulted in alt spiced viral host fusion genes
-## viralhost fusion transcripts of DIAPH2 were expressed while the native transcripts was not
+### DIAPH2 in UD-SCC-2
+* deletion and rearrangement of DIAPH2 locus, which plasy a role in sister-chromatid separation
+* resulted in alt spiced viral host fusion genes
+* viral-host fusion transcripts of DIAPH2 were expressed while the native transcripts was not
+
+### TP63 in UM-SCC-47
+* ampliifcation lead to aberrant expression of TP63
+* novel viral-host fusion transcripts expressed, and a novel 25kDa protein
+
+### other mechanisms
+* Skipping another example of amplification of FOXE1, PIM1
+* Also skipping an example of gene breakage, describes a mechanism where a disrupting event in a gene region results in two separate transcripts
+* In this case, premature termination of txpts at the HPV5 polyA site was the suspected cause of gene breaking at a solute carrier gene SLC47A2
+
 Discussion
 ----------
 

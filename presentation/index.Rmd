@@ -295,11 +295,6 @@ Two breakpoints delineated an HPV16 integrant that spanned a small genomic delet
 
 Viral fused truncated 3' transcripts
 
-```{r}
-## deletion and rearrangement of DIAPH2 locus, which plasy a role in sister-chromatid separation
-## resulted in alt spiced viral host fusion genes
-## viralhost fusion transcripts of DIAPH2 were expressed while the native transcripts was not
-```
 
 ---
 
@@ -321,13 +316,6 @@ Viral fused truncated 3' transcripts
 
 <img src="./assets/img/fig7g.png" alt="Figure 7G" height=450>
 
-```{r}
-## novel viral-host fusion transcripts expressed, and a novel 25kDa protein
-
-## Skipping another example of amplification of FOXE1, PIM1
-## Also skipping an example of gene breakage, describes a mechanism where a disrupting event in a gene region results in two separate transcripts
-## In this case, premature termination of txpts at the HPV5 polyA site was the suspected cause of gene breaking at a solute carrier gene SLC47A2
-```
 
 ---
 
